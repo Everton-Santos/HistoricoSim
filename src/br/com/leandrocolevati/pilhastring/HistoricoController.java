@@ -11,7 +11,7 @@ public class HistoricoController {
         siteAtual.add(nomeSite);
     }
 
-    public void removerSite(Metodos url) {
+    public void removerSite(String url) {
         siteAtual.remove(url);
     }
 

@@ -8,6 +8,10 @@ public class Historico {
         String nomeSite;
 
         teste.inserirSite("pokemon");
+        teste.inserirSite("Chinpokomon");
+        teste.inserirSite("Digimon");
+
+        teste.removerSite("pokemon");
 
         teste.consultarSite();
     }
