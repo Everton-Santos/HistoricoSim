@@ -1,13 +1,13 @@
 package br.com.leandrocolevati.pilhastring;
 
 public class Pilha {
-	
+
 	No topo;
 
 	public Pilha() {
 		topo = null;
 	}
-	
+
 	public boolean isEmpty() {
 		if (topo == null) {
 			return true;
@@ -15,7 +15,7 @@ public class Pilha {
 			return false;
 		}
 	}
-	
+
 	public void push(String e) {
 		No elemento = new No();
 		elemento.dado = e;
@@ -26,28 +26,28 @@ public class Pilha {
 			topo = elemento;
 		}
 	}
-	
+
 	public String pop() throws Exception {
 		if (isEmpty()) {
-			throw new Exception("Não há elementos para desempilhar");
+			throw new Exception("Nao ha elementos para desempilhar");
 		}
 		String valor = topo.dado;
 		topo = topo.proximo;
 		return valor;
 	}
-	
+
 	public String top() throws Exception {
 		if (isEmpty()) {
-			throw new Exception("Não há elementos na pilha");
+			throw new Exception("Nao ha elementos na pilha");
 		}
 		String valor = topo.dado;
 		return valor;
 	}
-	
+
 	public int size() {
 		int cont = 0;
-//		if (isEmpty == false) {
-//		if (isEmpty != true) {
+		// if (isEmpty == false) {
+		// if (isEmpty != true) {
 		if (!isEmpty()) {
 			No auxiliar = topo;
 			cont = 1;
@@ -60,9 +60,3 @@ public class Pilha {
 	}
 
 }
-
-
-
-
-
-
